@@ -9,6 +9,9 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <!-- jQuery Integration -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <!-- Favicons -->
   <link href="img/Favicon/favicon-32x32.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -67,11 +70,23 @@
 
     <section class="careers-page">
       <h3>Sorry! We don't have any openings at this time.</h3>
-      <div class="arrow-bounce">
-        <a class="fa fa-arrow-down fa-2x" href="#careers-form"></a>
+      <div class="arrow-bounce go-now">
+        <i class="fa fa-arrow-down fa-2x go-now"></i>
       </div>
     </section>
 
+    <!-- Internal JavaScript for Pressing the Button and Going Down -->
+    <script>
+
+      $(document).ready(function() {
+        $('div.go-now').click(function() {
+          $('html, body').animate({
+            scrollTop: $("section.careers-form").offset().top
+          }, 1000)
+        })
+      });
+
+    </script>
 
     <section class="careers-form" id="#careers-form">
       <h1>Careers</h1>
@@ -111,11 +126,11 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#home">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="assets/about-us.html">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="assets/careers.html">Careers</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="assets/why-choose-us.html">Why Choose Us?</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/index.html#home">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about-us.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/index.html#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="careers.html">Careers</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="why-choose-us.html">Why Choose Us?</a></li>
             </ul>
           </div>
 
