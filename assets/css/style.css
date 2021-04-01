@@ -1,6 +1,15 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+/* Declaring main body gradient */
+
+:root {
+
+  --maincyan: #669189;
+}
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -265,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover>a {
-  color: rgba(102, 145, 137);
+  color: var(--maincyan);
 }
 
 .navbar .dropdown:hover>ul {
@@ -365,7 +374,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover>a {
-  color: rgba(102, 145, 137);
+  color: var(--maincyan);
 }
 
 .navbar-mobile .getstarted {
@@ -397,7 +406,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover>a {
-  color: rgba(102, 145, 137);
+  color: var(--maincyan);
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -466,7 +475,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-contact-us:hover {
-  background: rgba(102, 145, 137);
+  background: color: var(--maincyan);
   color: white;
 }
 
@@ -866,7 +875,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(102, 145, 137);
+  background: color: var(--maincyan);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -1905,7 +1914,7 @@ ul.job-list>li.job-preview:hover {
   display: inline-block;
   padding: 10px 10px;
   position: relative;
-  color: rgba(102, 145, 137);
+  color: var(--maincyan);
 }
 
 @media only screen and (max-width: 600px) {
@@ -1968,13 +1977,21 @@ ul.job-list>li.job-preview:hover {
   letter-spacing: 1.5px;
   margin-left: 50px;
   margin-right: 50px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   color: black;
   font-family: "Poppins", sans-serif;
 }
 
 .det-about-us .cyan-para {
-  color: rgba(102, 145, 137);
+  color: var(--maincyan);
+}
+
+.about-us-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: auto;
 }
 
 
@@ -2007,7 +2024,7 @@ ul.job-list>li.job-preview:hover {
   display: inline-block;
   padding: 10px 10px;
   position: relative;
-  color: rgba(102, 145, 137);
+  color: var(--maincyan);
 }
 
 @media only screen and (max-width: 600px) {
