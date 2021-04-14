@@ -735,34 +735,26 @@
 
         <div class="row">
 
-          <div class="col-lg-6 ">
-            <i><iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55992.517260823035!2d77.09170087438409!3d28.703633241640567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03d5b0619f3f%3A0x2208402cf282fb02!2sPitam%20Pura%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1616440099487!5m2!1sen!2sin"
-                width="480" height="350" style="border: solid 2px white;" allowfullscreen="" loading="lazy"></iframe></i>
-          </div>
-
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+          <div class="col-lg-12 signup">
+            <h5>Contact Us!</h5>
+            <form class="signup-form" action="assets/register1.php" method="post" enctype="multipart/form-data">
+               <input type="text" placeholder="Name*" class="input" name="contact_name" required><br />
+               <input type="email" placeholder="Email*" class="input" name="contact_email" required><br />
+               <input type="tel" placeholder="Mobile Number*" class="input" name="contact_phno" required>
+               <textarea placeholder="Description*" class="input form-control" cols="30" rows="5" name="contact_disc" required></textarea>
+               <h6>Services</h6>
+               <select class="input" name="contact_service" required>
+                   <option  class="input" value="Brand Consultancy">Brand Consultancy</option>
+                   <option  class="input" value="Digital Marketing">Digital Marketing</option>
+                   <option  class="input" value="Brand Promotion">Brand Promotion</option>
+                   <option  class="input" value="Website Designing and Graphics Designing">Website Designing &amp; Graphics Designing</option>
+                   <option  class="input" value="SEO and SEM">Search engine optimisation(SEO) &amp; Search engine Management(SEM)</option>
+                   <option  class="input" value="Content Marketing">Content Marketing</option>
+                   <option  class="input" value="Public Relations">Public Relations</option>
+               </select>
+               <label class="form-group">Upload Document (PDF Format Only)</label><br/>
+               <input type="file" class="career-btn1" id="myFile" name="filename"><br><br>
+                     <input type="submit" name="submit_contact" class="signup-btn2" value="Submit">
             </form>
           </div>
 
